@@ -7,15 +7,32 @@ public class Estante {
 
     public void adicionarLivro(Livro livro) {
         this.livros.add(livro);
-        System.out.println(livros);
     }
 
     public void removerLivro(Livro livro) {
         if(this.livros.remove(livro)) {
             System.out.println("Livro removido");
-            System.out.println(livros);
         }
 
 
+    }
+
+    public Object buscarLivroPorTitulo(String titulo) {
+        for (Livro livroAtual : this.livros) {
+            if(livroAtual.getNome().equalsIgnoreCase(titulo)){
+                System.out.println("Livro Encontrado!" + livroAtual);
+
+            }
+        }
+        return null;
+    }
+
+    public Livro mostrarLivrosdisponiveis() {
+        for(Livro livroatual : this.livros) {
+            if(livroatual.estaDisponivel()) {
+                System.out.println(livroatual);
+            }
+
+        } return null;
     }
 }

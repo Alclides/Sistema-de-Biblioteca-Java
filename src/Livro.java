@@ -37,6 +37,6 @@ public class Livro {
 
     @Override
     public String toString() {
-        return "Livro: " + this.nome + " author é: " + this.autor;
+        return "Nome do Livro : " + this.nome + ", Author é: " + this.autor;
     }
 }
