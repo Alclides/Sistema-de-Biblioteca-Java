@@ -6,8 +6,14 @@ public class Main {
     public static void main(String[] args) {
 
     Livro livro = new Livro("Alclides", "Desconhecido");
+    Livro livro2 = new Livro("O homem que abraçou o Sol", "Fernanda Montenegro");
+    livro.marcarDisponivel();
 
-        System.out.println(livro);
+    Estante estante = new Estante();
+
+    estante.adicionarLivro(livro);
+    estante.adicionarLivro(livro2);
+    estante.removerLivro(livro2);
 
     }
 }
