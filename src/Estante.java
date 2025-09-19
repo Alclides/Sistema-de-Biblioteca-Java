@@ -11,16 +11,16 @@ public class Estante {
 
     public void removerLivro(Livro livro) {
         if(this.livros.remove(livro)) {
-            System.out.println("Livro removido");
+            System.out.println("Livro removido da estante");
         }
 
 
     }
 
-    public Object buscarLivroPorTitulo(String titulo) {
+    public Livro buscarLivroPorTitulo(String titulo) {
         for (Livro livroAtual : this.livros) {
             if(livroAtual.getNome().equalsIgnoreCase(titulo)){
-                System.out.println("Livro Encontrado!" + livroAtual);
+                return livroAtual;
 
             }
         }

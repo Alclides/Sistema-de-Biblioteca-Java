@@ -38,4 +38,8 @@ public abstract class Usuario {
             System.out.println("Livro invalido!");
         }
     }
+
+    public String getNome() {
+        return nome;
+    }
 }
