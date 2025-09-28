@@ -1,99 +1,93 @@
-📚 Sistema de Biblioteca – Java Puro
+# 📚 Sistema de Biblioteca -- Java Puro
 
-Projeto desenvolvido em Java com o objetivo de simular o funcionamento de um sistema de biblioteca no terminal.
-O sistema permite gerenciar livros, usuários e controlar empréstimos de forma simples.
+Projeto desenvolvido em **Java** com o objetivo de simular o
+funcionamento de um sistema de biblioteca no **terminal**.\
+O sistema permite gerenciar livros, usuários e controlar empréstimos de
+forma simples.
 
-🚀 Funcionalidades
+------------------------------------------------------------------------
 
-📖 Livros
+## 🚀 Funcionalidades
 
-Cadastrar novo livro
+-   📖 **Livros**
+    -   Cadastrar novo livro\
+    -   Listar todos os livros\
+    -   Atualizar informações de um livro\
+    -   Remover livro da biblioteca
+-   👤 **Usuários**
+    -   Cadastrar usuário\
+    -   Listar usuários cadastrados
+-   🔄 **Empréstimos**
+    -   Registrar empréstimo de livro\
+    -   Registrar devolução de livro\
+    -   Listar livros emprestados e disponíveis
 
-Listar todos os livros
+------------------------------------------------------------------------
 
-Atualizar informações de um livro
+## 🛠️ Tecnologias Utilizadas
 
-Remover livro da biblioteca
+-   **Java 17** (ou superior)\
+-   **IDE**: IntelliJ IDEA / Eclipse / VSCode\
+-   **Paradigma**: Programação Orientada a Objetos
 
-👤 Usuários
+------------------------------------------------------------------------
 
-Cadastrar usuário
+## 📂 Estrutura do Projeto
 
-Listar usuários cadastrados
+    src/
+     └── main/
+         └── biblioteca/
+             ├── Main.java           # Classe principal (menu interativo no terminal)
+             ├── Livro.java          # Classe que representa os livros
+             ├── Usuario.java        # Classe que representa os usuários
+             ├── Emprestimo.java     # Classe que representa os empréstimos
+             ├── Biblioteca.java     # Contém as listas e métodos de gerenciamento
+             └── Utils.java          # Métodos auxiliares (opcional)
 
-🔄 Empréstimos
+------------------------------------------------------------------------
 
-Registrar empréstimo de livro
+## ⚙️ Como Rodar o Projeto
 
-Registrar devolução de livro
+1.  Clone este repositório:
 
-Listar livros emprestados e disponíveis
+    ``` bash
+    git clone https://github.com/seu-usuario/biblioteca-java.git
+    ```
 
-🛠️ Tecnologias Utilizadas
+2.  Entre na pasta do projeto:
 
-Java 17 (ou superior)
+    ``` bash
+    cd biblioteca-java
+    ```
 
-IDE: IntelliJ IDEA / Eclipse / VSCode
+3.  Compile os arquivos `.java`:
 
-Paradigma: Programação Orientada a Objetos
+    ``` bash
+    javac src/biblioteca/*.java
+    ```
 
-📂 Estrutura do Projeto
-src/
- └── main/
-     └── biblioteca/
-         ├── Main.java           # Classe principal (menu interativo no terminal)
-         ├── Livro.java          # Classe que representa os livros
-         ├── Usuario.java        # Classe que representa os usuários
-         ├── Emprestimo.java     # Classe que representa os empréstimos
-         ├── Biblioteca.java     # Contém as listas e métodos de gerenciamento
-         └── Utils.java          # Métodos auxiliares (opcional)
+4.  Execute o programa:
 
-⚙️ Como Rodar o Projeto
+    ``` bash
+    java -cp src biblioteca.Main
+    ```
 
-Clone este repositório:
+------------------------------------------------------------------------
 
-git clone https://github.com/seu-usuario/biblioteca-java.git
+## 🔮 Futuras Melhorias
 
+-   Persistência em arquivo `.txt` ou `.json` para salvar dados\
+-   Busca de livros por título ou autor\
+-   Sistema de login e permissões de administrador
 
-Entre na pasta do projeto:
+------------------------------------------------------------------------
 
-cd biblioteca-java
-
-
-Compile os arquivos .java:
-
-javac src/biblioteca/*.java
-
-
-Execute o programa:
-
-java -cp src biblioteca.Main
-
-🎮 Exemplo de Uso
-===== MENU BIBLIOTECA =====
-1 - Cadastrar Livro
-2 - Listar Livros
-3 - Cadastrar Usuário
-4 - Listar Usuários
-5 - Emprestar Livro
-6 - Devolver Livro
-0 - Sair
-===========================
-
-Escolha uma opção:
-
-🔮 Futuras Melhorias
-
-Persistência em arquivo .txt ou .json para salvar dados
-
-Busca de livros por título ou autor
-
-Sistema de login e permissões de administrador
-
-🤝 Contribuições
+## 🤝 Contribuições
 
 Sinta-se à vontade para sugerir melhorias ou enviar pull requests.
 
-📜 Licença
+------------------------------------------------------------------------
+
+## 📜 Licença
 
 Este projeto está sob a licença MIT.
